@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+</head>
+<body>
+	<h1>Calculator</h1>
+	<form action="/cal/{{ num1 }}/{{ op }}/{{ num2 }}" method="get">
+		<label for="num1">Number 1:</label>
+		<input type="number" id="num1" name="num1"><br><br>
+
+		<label for="op">Operation:</label>
+		<select id="op" name="op">
+			<option value="add">Add</option>
+			<option value="subtract">Subtract</option>
+			<option value="multiply">Multiply</option>
+			<option value="modulus">Modulus</option>
+		</select><br><br>
+
+		<label for="num2">Number 2:</label>
+		<input type="number" id="num2" name="num2"><br><br>
+
+		<input type="submit" value="Calculate">
+	</form>
+</body>
+</html>
